@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeApp.MainPage">
+
+    <StackLayout BackgroundColor="LightPink">
+        <Frame BackgroundColor="DeepPink" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <!--Add Button Here --><!--
+        <Button Text="⬆" Font="50" TextColor="HotPink" Clicked="Handle_Clicked_Inc" BackgroundColor="Black" CornerRadius="80" />
+
+        --><!--Add Button Here --><!--
+        <Button Text="⬇" Font="50" TextColor="HotPink" Clicked="Handle_Clicked_Dec" BackgroundColor="Black" CornerRadius="80"/>-->
+
+
+
+        <ImageButton Source="https://media.fabfab.net/images/products/popup/green-grass--16_3352_01.jpg"
+               HeightRequest="200" BackgroundColor="Transparent" Clicked="Zoom"/>
+        
+        <ImageButton x:Name="Cookie" Source="https://upload.wikimedia.org/wikipedia/commons/b/b4/Choco_chip_cookie.png"
+               HeightRequest="200" BackgroundColor="Transparent" Clicked="Handle_Clicked_Inc"/>
+
+        <Label x:Name="label" Text="0" FontSize="Title" TextColor="DeepPink"  Padding="30,10,30,10" />
+        <!--More Labels here -->
+        
+    </StackLayout>
+
+</ContentPage>

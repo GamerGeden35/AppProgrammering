@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "dgSpecHash": "Tvkq9v+Whg4XchqwK/XHg3Z9mApnIkBbQeQnh7Mp2Luv+58kh+Aj37bLToGu5TPW/nTHXCDSPMvYjRXyv2dJHA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\AwesomeApp\\AwesomeApp\\AwesomeApp.iOS\\AwesomeApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HFGF\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2291 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n AwesomeApp.iOS -> AwesomeApp -> Xamarin.Forms (>= 5.0.0.2291) \r\n AwesomeApp.iOS -> Xamarin.Forms (>= 5.0.0.2196)",
+      "libraryId": "Xamarin.Forms",
+      "targetGraphs": [
+        "Xamarin.iOS,Version=v1.0",
+        "Xamarin.iOS,Version=v1.0/win",
+        "Xamarin.iOS,Version=v1.0/win-x64",
+        "Xamarin.iOS,Version=v1.0/win-x86"
+      ]
+    }
+  ]
+}
