@@ -1,12 +1,3 @@
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.Android.dll
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.Android.pdb
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp.apk
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp.aab
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.aab
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.apk
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.apk.idsig
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.dll
-C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.pdb
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\MonoAndroid,Version=v12.0.AssemblyAttributes.cs
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\build.props
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\adb.props
@@ -41,6 +32,15 @@ C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\12
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\R.txt
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\R.cs.flag
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\AwesomeApp.Android.csproj.CoreCompileInputs.cache
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.Android.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.Android.pdb
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp.apk
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp.aab
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.aab
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.apk
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\com.companyname.awesomeapp-Signed.apk.idsig
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\bin\Debug\AwesomeApp.pdb
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\AwesomeApp.Android.csproj.CopyComplete
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\AwesomeApp.Android.dll
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\AwesomeApp.Android.pdb
@@ -627,3 +627,6 @@ C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\12
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\home.png
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\cookie.png
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\stiim.jpg
