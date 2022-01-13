@@ -3,25 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AwesomeApp.CookieClicker">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="SlateGray" >
+        <StackLayout BackgroundColor="Gray">
+
             <Frame BackgroundColor="SaddleBrown" Padding="24" CornerRadius="0" BorderColor="Brown" >
-                <Label Text="Cookie Clicker" HorizontalTextAlignment="Center" TextColor="RosyBrown" FontSize="36"/>
+                <Label Text="Cookie Clicker" HorizontalTextAlignment="Center" TextColor="RosyBrown" FontSize="36"
+                           
+
+                />
             </Frame>
-
-            <!--Add Button Here -->
-            <!--
-        <Button Text="⬆" Font="50" TextColor="HotPink" Clicked="Handle_Clicked_Inc" BackgroundColor="Black" CornerRadius="80" />
-
-        -->
-            <!--Add Button Here -->
-            <!--
-        <Button Text="⬇" Font="50" TextColor="HotPink" Clicked="Handle_Clicked_Dec" BackgroundColor="Black" CornerRadius="80"/>-->
-
+            <!-- Cookie that y<StackLayout click on<Button make the counter go up -->
             <ImageButton x:Name="Cookie" Source="Cookie.png"
                HeightRequest="400" BackgroundColor="Transparent" Clicked="Handle_Clicked_Inc" Padding="0,30,0,0"/>
 
-            <Label x:Name="label" Text="0" FontSize="75" TextColor="SaddleBrown"  Padding="30,50,30,10" HorizontalTextAlignment="Center" />
-            <!--More Labels here -->
+            <!-- The label that shows your amount of cookies-->
+            <Label x:Name="counter" Text="0" FontSize="75" TextColor="SaddleBrown"  Padding="30,50,30,10" HorizontalTextAlignment="Center" /> 
+
+
 
         </StackLayout>
     </ContentPage.Content>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeApp.LoginPage" BackgroundColor="#3d3c3a">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid VerticalOptions="CenterAndExpand" Margin="20" RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                        <Image Source="stiim.png" Grid.Row="0" Grid.ColumnSpan="2" />
+
+                    <Entry Placeholder="Username" TextColor="White" x:Name="InputUser" Grid.Row="1" Grid.ColumnSpan="2" PlaceholderColor="White"/>
+                    <Entry Placeholder="Password" TextColor="White" IsPassword="True" x:Name="InputPassword" Grid.Row="2" Grid.ColumnSpan="2" PlaceholderColor="White"/>
+                    <Button CornerRadius="5" Text="Sign In" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="#1076a7" Clicked="LoginUser" Grid.Row="3" Grid.Column="1">
+                        <Button.Background>
+                            <RadialGradientBrush Center="0.4,0.4" Radius="0.9">
+                                <GradientStop Color="#091b43" Offset="0.1"/>
+                                <GradientStop Color="#1076a7" Offset="1.0"/>
+                            </RadialGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Button CornerRadius="5" Text="Sign Up" HorizontalOptions="CenterAndExpand" WidthRequest="100" TextColor="White" BackgroundColor="#1076a7" Clicked="SignUpUser" Grid.Row="3" Grid.Column="0">
+                        <Button.Background>
+                            <RadialGradientBrush Center="0.4,0.4" Radius="0.9">
+                                <GradientStop Color="#091b43" Offset="0.1"/>
+                                <GradientStop Color="#1076a7" Offset="1.0"/>
+                            </RadialGradientBrush>
+                        </Button.Background>
+                    </Button>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

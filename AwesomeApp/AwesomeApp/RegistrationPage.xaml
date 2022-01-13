@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AwesomeApp.RegistrationPage" BackgroundColor="#3d3c3a">
+    <ContentPage.Content>
+        <!--<StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>-->
+
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0" RowSpacing="20" VerticalOptions="CenterAndExpand">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="stiim.png" Grid.Row="0" />
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Username" FontSize="16" x:Name="InputUsername" TextColor="White" PlaceholderColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Password" IsPassword="True" FontSize="16" x:Name="InputUserPassword" TextColor="White" PlaceholderColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="Email" FontSize="16" x:Name="InputUserEmail" TextColor="White" PlaceholderColor="White"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <Button CornerRadius="5" Text="Register" WidthRequest="100" TextColor="White" BackgroundColor="#1076a7" Clicked="RegisterUser">
+                            <Button.Background>
+                                <RadialGradientBrush Center="0.4,0.4" Radius="0.9">
+                                    <GradientStop Color="#091b43" Offset="0.1"/>
+                                    <GradientStop Color="#1076a7" Offset="1.0"/>
+                                </RadialGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button Grid.Row="5" Text="Allerede bruger? Log ind" TextColor="Gray" Clicked="Login" BorderColor="Transparent" BackgroundColor="Transparent"/>
+                    </StackLayout>
+
+
+
+
+
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
