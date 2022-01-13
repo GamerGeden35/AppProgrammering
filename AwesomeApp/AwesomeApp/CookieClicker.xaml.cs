@@ -1,5 +1,8 @@
-﻿using System;
+﻿using AwesomeApp.Tables;
+using SQLite;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,5 +33,17 @@ namespace AwesomeApp
                 Cookie.ScaleTo(0.99, 20, Easing.Linear);
             }
         }
+
+        async private void SaveScore(object sender, EventArgs e)
+        {
+            var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ScoreDatabase.db");
+            var db = new SQLiteConnection(dbpath);
+            var myquery = db.Table<ScoresTable>().Where(s => s.Score.Equals(cookies)).FirstOrDefault();
+
+            //var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
+            //var db = new SQLiteConnection(dbpath);
+            //var myquery = db.Table<ReqUserTable>().Where(u => u.Username.Equals(InputUser.Text) && u.Password.Equals(InputPassword.Text)).FirstOrDefault();
+        }
+
     }
 }

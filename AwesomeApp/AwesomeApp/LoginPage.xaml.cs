@@ -22,7 +22,7 @@ namespace AwesomeApp
 
         }
         
-        async private void LoginUser(object sender, EventArgs e)
+         async private void LoginUser(object sender, EventArgs e)
         {
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
             var db = new SQLiteConnection(dbpath);
@@ -37,7 +37,7 @@ namespace AwesomeApp
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    var result = await this.DisplayAlert("Error", "Brugernavn eller Adgangskode er indtastet forkert", "OK", "Annullér");
+                    var result = await this.DisplayAlert("Error", "Username or Password is incorrect", "OK", "Cancel");
 
                     if (result)
                         await Navigation.PushAsync(new LoginPage());

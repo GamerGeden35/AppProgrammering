@@ -16,6 +16,7 @@ namespace AwesomeApp
         public MainPage()
         {
             InitializeComponent();
+            //var ExecuteLogout = App.Current.MainPage = new NavigationPage(new LoginPage());
         }
 
 

@@ -638,3 +638,7 @@ C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\12
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Buffers.dll
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Memory.dll
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\signout.png
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\sunshine.png
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\weather
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\weather.png

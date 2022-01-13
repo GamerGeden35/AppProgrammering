@@ -145,4 +145,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\stiim.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\signOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sunshine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\weather.png" />
+  </ItemGroup>
 </Project>

@@ -37,10 +37,17 @@ namespace AwesomeApp
             db.Insert(item);
             Device.BeginInvokeOnMainThread(async () =>
             {
-                var result = await this.DisplayAlert("Success", "Bruger Oprettet", "OK", "Annullér");
-
+                if (InputUsername.Text != null && InputUserPassword.Text != null && InputUserEmail.Text != null)
+                {   
+                var result = await this.DisplayAlert("Success", "User Created", "OK", "Cancel");
                 if (result)
                     await Navigation.PushAsync(new LoginPage());
+                }
+                else
+                {
+                    await this.DisplayAlert("Error", "One of the fields is not filled correctly", "OK", "Cancel");
+                }
+
             });
 
         }
