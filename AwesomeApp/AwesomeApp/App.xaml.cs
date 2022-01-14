@@ -10,8 +10,8 @@ namespace AwesomeApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new LoginPage());
-            //MainPage = new NavigationPage(new WeatherApp());
+            //MainPage = new NavigationPage(new LoginPage());
+            MainPage = new NavigationPage(new WeatherApp());
             //MainPage = new LoginPage();
         }
 
