@@ -669,3 +669,4 @@ C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\12
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_GenerateJavaStubs.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll

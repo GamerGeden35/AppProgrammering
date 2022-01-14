@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,15 +16,14 @@ namespace AwesomeApp
         public WeatherApp()
         {
             InitializeComponent();
-            SesØjne();
-
+            GetWeatherInfo();
         }
 
-        private string Location = "France";
+        private string Location = "Odense";
 
         private async void GetWeatherInfo()
         {
-            var url = $"api.openweathermap.org/data/2.5/weather?q={Location}&appid=4efd146048741e1c3dfc3ba94486df43";
+            var url = $"http://api.openweathermap.org/data/2.5/weather?q={Location}&appid={ YOUR API KEY}&units=metric";
 
             var result = await ApiWeatherCaller.Get(url);
 
@@ -31,16 +31,29 @@ namespace AwesomeApp
             {
                 try
                 {
-                    var weatherInfo
+                    var weatherInfo = JsonConvert.DeserializeObject<WeatherInfo>(result.Response);
+                    descriptionTxt.Text = weatherInfo.weather[0].description.ToUpper();
+                    iconImg.Source = $"w{weatherInfo.weather[0].icon}";
+                    cityTxt.Text = weatherInfo.name.ToUpper();
+                    temperatureTxt.Text = weatherInfo.main.temp.ToString("0");
+                    humidityTxt.Text = $"{weatherInfo.main.humidity}%";
+                    windTxt.Text = $"{weatherInfo.wind.speed} m/s";
+                    cloudinessTxt.Text = $"{weatherInfo.clouds.all}%";
+
+                    var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
+                    dateTxt.Text = dt.ToString("dddd, MMM dd").ToUpper();
+
+                    //GetForecast();
+
                 }
                 catch (Exception ex)
                 {
-                    
+                    await DisplayAlert("Weather Info", ex.Message, "OK");
                 }
             }
             else
             {
-                await DisplaAlert("Weather Info", "No Weather Info Found", "Ok");
+                await DisplayAlert("Weather Info", "No Weather Info Found", "Ok");
             }
 
 
@@ -49,7 +62,7 @@ namespace AwesomeApp
 
         public void SesØjne(object sender, System.EventArgs e)
         {
-            gamer.Opacity = 1;
+                gamer.Opacity = 100;
                 Random r = new Random();
                 int one = r.Next(0, 255);
                 int two = r.Next(0, 255);

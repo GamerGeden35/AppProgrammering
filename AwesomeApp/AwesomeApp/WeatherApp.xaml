@@ -53,36 +53,42 @@
                         </StackLayout>
                         <Label Text="CELSIUS" Margin="0,-30,0,0" TextColor="White" FontSize="13" HorizontalOptions="Center"/>
                     </StackLayout>
-                    <Grid WidthRequest="320" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="0,50,0,0">
+                    <Grid WidthRequest="320" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Vertical" Spacing="10" HorizontalOptions="FillAndExpand">
                             <Image Source="humidity.png" HeightRequest="25" HorizontalOptions="Center"/>
                             <Label Text="Humidity" TextColor="White"  FontSize="11" HorizontalOptions="Center"/>
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                            <StackLayout Grid.Row="1" Spacing="7" HorizontalOptions="CenterAndExpand">
                                 <Label x:Name="humidityTxt" Text="50%" TextColor="White" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                             </StackLayout>
                         </StackLayout>
-                        <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10">
+                        <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="FillAndExpand">
                             <Image Source="wind.png" HeightRequest="25" HorizontalOptions="Center"/>
                             <Label Text="Wind" TextColor="White"  FontSize="11" HorizontalOptions="Center"/>
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                            <StackLayout Grid.Row="1" Spacing="7" HorizontalOptions="CenterAndExpand">
                                 <Label x:Name="windTxt" Text="2.6 m/s" TextColor="White" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                             </StackLayout>
                         </StackLayout>
-                        <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                        <StackLayout Grid.Row="0" Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="FillAndExpand">
                             <Image Source="cloudiness.png" HeightRequest="25" HorizontalOptions="Center"/>
                             <Label Text="Cloudiness" TextColor="White"  FontSize="11" HorizontalOptions="Center"/>
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
+                            <StackLayout Grid.Row="1" Spacing="7" HorizontalOptions="CenterAndExpand">
                                 <Label x:Name="cloudinessTxt" Text="24%" TextColor="White" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                             </StackLayout>
                         </StackLayout>
                     </Grid>
-                    <Button Text="Check om det er gamer vejr" Clicked="SesØjne"/>
-                    <Label Text="Det er gamer vejr" FontSize="30" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="gamer"/>
+                    <Button Grid.Row="2" Text="Check om det er gamer vejr" Clicked="SesØjne" />
+                    <Label Grid.Row="3" Opacity="0" Text="Det er gamer vejr" FontSize="30" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="gamer"/>
                 </StackLayout>
             </Grid>
         </Grid>

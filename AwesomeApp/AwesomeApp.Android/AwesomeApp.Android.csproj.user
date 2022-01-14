@@ -4,5 +4,6 @@
     <SelectedDevice>OnePlus KB2003</SelectedDevice>
     <ActiveDebugProfile>OnePlus KB2003</ActiveDebugProfile>
     <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
+    <AndroidDesignerPreferredTheme>MainTheme</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
