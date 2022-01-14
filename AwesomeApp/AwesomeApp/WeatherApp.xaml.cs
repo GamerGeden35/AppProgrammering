@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace AwesomeApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WeatherApp : ContentView
+    public partial class WeatherApp : ContentPage
     {
         public WeatherApp()
         {

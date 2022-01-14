@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AwesomeApp.Tables
 {
-    internal class ScoresTable
+    public class ScoresTable
     {
         public int Score { get; set; }
     }

@@ -34,16 +34,28 @@ namespace AwesomeApp
             }
         }
 
-        async private void SaveScore(object sender, EventArgs e)
+        private void SaveScore(object sender, EventArgs e)
         {
             var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ScoreDatabase.db");
             var db = new SQLiteConnection(dbpath);
-            var myquery = db.Table<ScoresTable>().Where(s => s.Score.Equals(cookies)).FirstOrDefault();
+            db.CreateTable<ScoresTable>();
 
-            //var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "UserDatabase.db");
-            //var db = new SQLiteConnection(dbpath);
-            //var myquery = db.Table<ReqUserTable>().Where(u => u.Username.Equals(InputUser.Text) && u.Password.Equals(InputPassword.Text)).FirstOrDefault();
+            var score = new ScoresTable()
+            {
+                Score = cookies
+            };
+            db.Insert(score);
+
         }
+
+        void ResumeGame_Clicked(object sender, System.EventArgs e)
+        {
+            var dbpath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ScoreDatabase.db");
+            var db = new SQLiteConnection(dbpath);
+            cookies = db.Table<ScoresTable>().Max(s => s.Score);
+        }
+
+
 
     }
 }

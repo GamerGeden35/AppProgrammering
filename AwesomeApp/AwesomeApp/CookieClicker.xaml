@@ -18,7 +18,9 @@
             <!-- The label that shows your amount of cookies-->
             <Label x:Name="counter" Text="0" FontSize="75" TextColor="SaddleBrown"  Padding="30,50,30,10" HorizontalTextAlignment="Center" /> 
 
+            
             <Button x:Name="SaveScoreBtn" Clicked="SaveScore" Text="Save Score" />
+            <Button x:Name="ResumeGame" Clicked="ResumeGame_Clicked" Text="Resume Game" />
 
 
 

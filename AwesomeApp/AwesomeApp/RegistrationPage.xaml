@@ -39,7 +39,7 @@
                                 </RadialGradientBrush>
                             </Button.Background>
                         </Button>
-                        <Button Grid.Row="5" Text="Already a user? Sign In" TextColor="Gray" Clicked="Login" BorderColor="Transparent" BackgroundColor="Transparent"/>
+                        <Button Grid.Row="5" Text="Already have an account? Sign In" TextColor="Gray" Clicked="Login" BorderColor="Transparent" BackgroundColor="Transparent"/>
                     </StackLayout>
 
 
