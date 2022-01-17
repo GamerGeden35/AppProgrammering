@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -37,6 +37,7 @@ namespace AwesomeApp
             {
                 Device.BeginInvokeOnMainThread(async () =>
                 {
+                    Vibration.Vibrate(100);
                     var result = await this.DisplayAlert("Error", "Username or Password is incorrect", "OK", "Cancel");
 
                     if (result)

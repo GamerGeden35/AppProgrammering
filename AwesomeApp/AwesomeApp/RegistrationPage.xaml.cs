@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -45,7 +45,9 @@ namespace AwesomeApp
                 }
                 else
                 {
+                    Vibration.Vibrate(100);
                     await this.DisplayAlert("Error", "One of the fields is not filled correctly", "OK", "Cancel");
+
                 }
 
             });

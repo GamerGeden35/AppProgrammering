@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,6 +23,8 @@ namespace AwesomeApp
         void Handle_Clicked_Inc(object sender, System.EventArgs e)
         {
             cookies++;
+            //Xamarin.Essentials.Vibration.Cancel();
+            Vibration.Vibrate(55);
             counter.Text = $"{cookies}";
             if (cookies % 2 != 0)
             {
