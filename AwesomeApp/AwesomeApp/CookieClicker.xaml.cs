@@ -19,9 +19,26 @@ namespace AwesomeApp
         public CookieClicker()
         {
             InitializeComponent();
+            BindingContext = this;
         }
 
-        int cookies = 0;
+        //int cookies = 0;
+
+        private int _cookies;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public int cookies
+        {
+            get { return _cookies; }
+            set { _cookies = value; OnPropertyChanged("cookies"); }
+        }
 
         //private int _cookies = 0;
 
@@ -38,14 +55,14 @@ namespace AwesomeApp
         //    get { return _cookies; }
         //    set { _cookies = value; OnPropertyChanged("cookies"); }
         //}
-        
+
 
         void Handle_Clicked_Inc(object sender, System.EventArgs e)
         {
             cookies++;
             //Xamarin.Essentials.Vibration.Cancel();
             Vibration.Vibrate(55);
-            counter.Text = $"{cookies}";
+            //counter.Text = $"{cookies}";
             if (cookies % 2 != 0)
             {
                 Cookie.ScaleTo(1, 20, Easing.Linear);

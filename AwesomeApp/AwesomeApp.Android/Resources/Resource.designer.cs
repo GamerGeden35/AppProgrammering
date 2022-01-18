@@ -16760,7 +16760,10 @@ namespace AwesomeApp.Droid
 			public const int weather = 2131165359;
 			
 			// aapt resource value: 0x7F0700B0
-			public const int wind = 2131165360;
+			public const int weatherlogogg = 2131165360;
+			
+			// aapt resource value: 0x7F0700B1
+			public const int wind = 2131165361;
 			
 			static Drawable()
 			{

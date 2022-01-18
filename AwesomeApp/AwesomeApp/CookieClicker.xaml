@@ -27,7 +27,7 @@
 
                 <!-- The label that shows your amount of cookies-->
                 <StackLayout Grid.Row="2">
-            <Label x:Name="counter" Text="0" FontSize="75" TextColor="SaddleBrown" HorizontalTextAlignment="Center" />
+            <Label x:Name="counter" Text="{Binding cookies}" FontSize="75" TextColor="SaddleBrown" HorizontalTextAlignment="Center" />
                 </StackLayout>
 
                 <StackLayout Grid.Row="3">

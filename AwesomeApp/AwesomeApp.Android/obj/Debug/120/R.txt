@@ -1960,7 +1960,8 @@ int drawable w13n 0x7f0700ac
 int drawable w50d 0x7f0700ad
 int drawable w50n 0x7f0700ae
 int drawable weather 0x7f0700af
-int drawable wind 0x7f0700b0
+int drawable weatherlogogg 0x7f0700b0
+int drawable wind 0x7f0700b1
 int id ALT 0x7f080000
 int id BOTTOM_END 0x7f080001
 int id BOTTOM_START 0x7f080002

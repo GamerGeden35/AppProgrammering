@@ -9947,7 +9947,8 @@ public final class R {
     public static final int w50d=0x7f0700ad;
     public static final int w50n=0x7f0700ae;
     public static final int weather=0x7f0700af;
-    public static final int wind=0x7f0700b0;
+    public static final int weatherlogogg=0x7f0700b0;
+    public static final int wind=0x7f0700b1;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

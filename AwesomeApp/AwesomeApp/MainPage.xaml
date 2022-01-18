@@ -11,8 +11,8 @@
                 FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Home" Icon="Home.png" IsTabStop="True" ContentTemplate="{DataTemplate local:Home}"/>
         <ShellContent Title="CC" Icon="Cookie.png" IsTabStop="True" ContentTemplate="{DataTemplate local:CookieClicker}"/>
+        <ShellContent Title="Gamer Weather?" Icon="weatherlogogg.png" IsTabStop="True" ContentTemplate="{DataTemplate local:WeatherApp}"/>
         <ShellContent Title="Sign Out" Icon="signOut.png" IsTabStop="True" ContentTemplate="{DataTemplate local:LoginPage}"/>
-        <ShellContent Title="Gamer Weather?" Icon="signOut.png" IsTabStop="True" ContentTemplate="{DataTemplate local:WeatherApp}"/>
         <!--<MenuItem Text="Logout" Command="{Binding ExecuteLogout}"/>-->
 
     </FlyoutItem> 

@@ -670,3 +670,15 @@ C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\12
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Newtonsoft.Json.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Microsoft.CodeAnalysis.CSharp.pdb
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Microsoft.CodeAnalysis.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Microsoft.CodeAnalysis.pdb
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Collections.Immutable.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Reflection.Metadata.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Text.Encoding.CodePages.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Text.Encoding.CodePages.pdb
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\System.Threading.Tasks.Extensions.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Xamarin.Forms.HotReload.Reloader.dll
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\android\assets\Xamarin.Forms.HotReload.Reloader.pdb
+C:\Users\HFGF\source\repos\AwesomeApp\AwesomeApp\AwesomeApp.Android\obj\Debug\120\res\drawable\weatherlogogg.png

@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,29 @@ using Xamarin.Forms.Xaml;
 namespace AwesomeApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class WeatherApp : ContentPage
+    public partial class WeatherApp : ContentPage, INotifyPropertyChanged
     {
         public WeatherApp()
         {
             InitializeComponent();
             GetWeatherInfo();
+            BindingContext = this;
+        }
+
+        private string _gamervejr;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public string gamervejr
+        {
+            get { return _gamervejr; }
+            set { _gamervejr = value; OnPropertyChanged("gamervejr"); }
         }
 
         private string Location = "Odense";
@@ -79,22 +97,25 @@ namespace AwesomeApp
                     dateTxt.Text = dt.ToString(test.ToString("ddd") + ", MMMM, dd").ToUpper();
                     //dateTxt.Text = dt.ToString("dddd, MMMM, dd").ToUpper();
 
-
                     if (weatherInfo.main.temp >= 1 && weatherInfo.main.temp <= 10)
                             {
                                 temperatureTxt.TextColor = Color.White;
+                                gamervejr = "It is gamer weather";
                             }
                             else if (weatherInfo.main.temp <= 0)
                             {
                                 temperatureTxt.TextColor = Color.Turquoise;
+                                gamervejr = "It is gamer weather with a scarf on";
                             }
                             else if (weatherInfo.main.temp >= 11 && weatherInfo.main.temp <= 20)
                             {
                                 temperatureTxt.TextColor = Color.Orange;
+                                gamervejr = "It is gamer weather with";
                             }
                             else
                             {
                                 temperatureTxt.TextColor = Color.Red;
+                                gamervejr = "It is gamer weather with aircon"; 
                             }
 
                             //GetForecast();

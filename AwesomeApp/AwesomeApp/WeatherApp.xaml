@@ -85,9 +85,9 @@
                                 <Label x:Name="cloudinessTxt" Text="24%" TextColor="White" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
                             </StackLayout>
                         </StackLayout>
+                    <Button Grid.Row="2" Grid.ColumnSpan="3" Text="Check if it is gamer weather" Clicked="SesØjne" />
+                    <Label Grid.Row="3" Grid.ColumnSpan="3" Opacity="0" Text="{Binding gamervejr}" TextColor="White" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="gamer"/>
                     </Grid>
-                    <Button Grid.Row="2" Text="Check om det er gamer vejr" Clicked="SesØjne" />
-                    <Label Grid.Row="3" Opacity="0" Text="Det er gamer vejr" FontSize="30" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="gamer"/>
                 </StackLayout>
             </Grid>
         </Grid>
