@@ -2,6 +2,7 @@
 using SQLite;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,13 +14,32 @@ using Xamarin.Forms.Xaml;
 namespace AwesomeApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CookieClicker : ContentPage
+    public partial class CookieClicker : ContentPage, INotifyPropertyChanged
     {
         public CookieClicker()
         {
             InitializeComponent();
         }
+
         int cookies = 0;
+
+        //private int _cookies = 0;
+
+        //public event PropertyChangedEventHandler PropertyChanged;
+
+        //protected void OnPropertyChanged(string propertyName)
+        //{
+        //    PropertyChangedEventHandler handler = PropertyChanged;
+        //    if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName)); 
+        //}
+
+        //public int cookies
+        //{
+        //    get { return _cookies; }
+        //    set { _cookies = value; OnPropertyChanged("cookies"); }
+        //}
+        
+
         void Handle_Clicked_Inc(object sender, System.EventArgs e)
         {
             cookies++;

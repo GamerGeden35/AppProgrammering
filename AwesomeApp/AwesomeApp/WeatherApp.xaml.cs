@@ -118,8 +118,6 @@ namespace AwesomeApp
 
         public void SesØjne(object sender, System.EventArgs e)
         {
-
-
                 gamer.Opacity = 100;
             //    Random r = new Random();
 
