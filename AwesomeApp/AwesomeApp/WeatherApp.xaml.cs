@@ -44,6 +44,9 @@ namespace AwesomeApp
                     //dateTxt.Text = dt.ToString("dddd, MMM dd").ToUpper();
 
                     //var day = new DateTime().Day;
+                    DateTime test = DateTime.Now;
+
+                    //DayOfWeek wk = DateTime.Today.DayOfWeek;
 
                     //int day = 4;
                     //switch (day)
@@ -71,12 +74,13 @@ namespace AwesomeApp
                     //        break;
                     //}
 
-                    //var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
-                    var dt = new DateTime(weatherInfo.dt * 1000);
-                    dateTxt.Text = dt.ToString("dddd, MMM dd").ToUpper();
+                    var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
+                    //var dt = new DateTime(weatherInfo.dt * 1000);
+                    dateTxt.Text = dt.ToString(test.ToString("ddd") + ", MMMM, dd").ToUpper();
+                    //dateTxt.Text = dt.ToString("dddd, MMMM, dd").ToUpper();
 
 
-                            if (weatherInfo.main.temp >= 1 && weatherInfo.main.temp <= 10)
+                    if (weatherInfo.main.temp >= 1 && weatherInfo.main.temp <= 10)
                             {
                                 temperatureTxt.TextColor = Color.White;
                             }
@@ -117,17 +121,17 @@ namespace AwesomeApp
 
 
                 gamer.Opacity = 100;
-                Random r = new Random();
+            //    Random r = new Random();
 
-            for (int i = 0; i < 10; i++)
-            {
-                int one = r.Next(0, 255);
-                int two = r.Next(0, 255);
-                int three = r.Next(0, 255);
-                int four = r.Next(0, 255);
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    int one = r.Next(0, 255);
+            //    int two = r.Next(0, 255);
+            //    int three = r.Next(0, 255);
+            //    int four = r.Next(0, 255);
 
-                gamer.TextColor = Color.FromRgba(one, two, three, four);
-            }
+            //    gamer.TextColor = Color.FromRgba(one, two, three, four);
+            //}
         }
 
     }

@@ -3,27 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AwesomeApp.CookieClicker">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Gray">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackLayout Spacing="-5" BackgroundColor="Gray">
 
-            <Frame BackgroundColor="SaddleBrown" Padding="24" CornerRadius="0" BorderColor="Brown" >
-                <Label Text="Cookie Clicker" HorizontalTextAlignment="Center" TextColor="RosyBrown" FontSize="36"
+            <Frame Grid.Row="0" BackgroundColor="SaddleBrown" Padding="24" CornerRadius="0" BorderColor="Brown" >
+                <Label Grid.Row="0" Text="Cookie Clicker" HorizontalTextAlignment="Center" TextColor="RosyBrown" FontSize="36"
                            
 
                 />
             </Frame>
             <!-- Cookie that y<StackLayout click on<Button make the counter go up -->
-            <ImageButton x:Name="Cookie" Source="Cookie.png"
+            <ImageButton Grid.Row="1" x:Name="Cookie" Source="Cookie.png"
                HeightRequest="400" BackgroundColor="Transparent" Clicked="Handle_Clicked_Inc" Padding="0,30,0,0"/>
 
             <!-- The label that shows your amount of cookies-->
-            <Label x:Name="counter" Text="0" FontSize="75" TextColor="SaddleBrown"  Padding="30,50,30,10" HorizontalTextAlignment="Center" /> 
+            <Label Grid.Row="2" x:Name="counter" Text="0" FontSize="75" TextColor="SaddleBrown"  Padding="30,50,30,10" HorizontalTextAlignment="Center" /> 
 
             
-            <Button x:Name="SaveScoreBtn" Clicked="SaveScore" Text="Save Score" />
-            <Button x:Name="ResumeGame" Clicked="ResumeGame_Clicked" Text="Resume Game" />
+            <Button Grid.Row="3" x:Name="SaveScoreBtn" Clicked="SaveScore" Text="Save Score" />
+            <Button Grid.Row="4" x:Name="ResumeGame" Clicked="ResumeGame_Clicked" Text="Resume Game" />
 
-
-
-        </StackLayout>
+            </StackLayout> 
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
