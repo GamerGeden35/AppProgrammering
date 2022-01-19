@@ -64,6 +64,9 @@ namespace AwesomeApp
                     //var day = new DateTime().Day;
                     DateTime test = DateTime.Now;
 
+
+                    
+
                     //DayOfWeek wk = DateTime.Today.DayOfWeek;
 
                     //int day = 4;

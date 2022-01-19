@@ -46,7 +46,7 @@ namespace AwesomeApp
                 else
                 {
                     Vibration.Vibrate(100);
-                    await this.DisplayAlert("Error", "One of the fields is not filled correctly", "OK", "Cancel");
+                    await this.DisplayAlert("Error", "One of the fields is not filled correctly", "OK");
 
                 }
 

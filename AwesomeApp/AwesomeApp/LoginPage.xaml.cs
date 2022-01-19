@@ -42,10 +42,6 @@ namespace AwesomeApp
 
                     if (result)
                         await Navigation.PushAsync(new LoginPage());
-                    else
-                    {
-                        await Navigation.PushAsync(new LoginPage());
-                    }
                 });
             }
         }

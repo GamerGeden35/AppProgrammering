@@ -34,5 +34,7 @@
     <string>AwesomeApp</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Allow access to location to view the current weather in your city.</string>
 </dict>
 </plist>
