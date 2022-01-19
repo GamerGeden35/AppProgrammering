@@ -24,5 +24,6 @@ namespace AwesomeApp.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 }

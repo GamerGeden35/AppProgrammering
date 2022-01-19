@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "3wIE54GnPiGhPWK+oI22H79Q6RikYwz2e6YMhv58/AIgYS9qNwh/d50HaNcE+j96nNJunkMqSiMW+CCvLiwiig==",
+  "dgSpecHash": "gL1CiXwCFSSh4V0PlxDCLpC2HDCtWLw1SP0Es68c+4JIP6M6U3nEwv6wCZ/RZ0KpSSiODfs1ENgiIKvz769AHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\HFGF\\source\\repos\\AwesomeApp\\AwesomeApp\\AwesomeApp.Android\\AwesomeApp.Android.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0-beta2.20059.3\\microsoft.codeanalysis.analyzers.3.0.0-beta2.20059.3.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.codeanalysis.common\\3.5.0\\microsoft.codeanalysis.common.3.5.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.5.0\\microsoft.codeanalysis.csharp.3.5.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
@@ -14,13 +11,9 @@
     "C:\\Users\\HFGF\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3.android\\2.0.4\\sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.4\\sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.androidx.activity\\1.2.4.1\\xamarin.androidx.activity.1.2.4.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.androidx.annotation\\1.2.0.1\\xamarin.androidx.annotation.1.2.0.1.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.androidx.annotation.experimental\\1.1.0.1\\xamarin.androidx.annotation.experimental.1.1.0.1.nupkg.sha512",
@@ -75,21 +68,9 @@
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.androidx.viewpager\\1.0.0.8\\xamarin.androidx.viewpager.1.0.0.8.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.androidx.viewpager2\\1.0.0.10\\xamarin.androidx.viewpager2.1.0.0.10.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.forms\\5.0.0.2291\\xamarin.forms.5.0.0.2291.nupkg.sha512",
     "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.google.android.material\\1.4.0.2\\xamarin.google.android.material.1.4.0.2.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512",
-    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.hotreload\\2.0.16\\xamarin.hotreload.2.0.16.nupkg.sha512"
+    "C:\\Users\\HFGF\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Detected package downgrade: Xamarin.Forms from 5.0.0.2291 to 5.0.0.2196. Reference the package directly from the project to select a different version. \r\n AwesomeApp.Android -> AwesomeApp -> Xamarin.Forms (>= 5.0.0.2291) \r\n AwesomeApp.Android -> Xamarin.Forms (>= 5.0.0.2196)",
-      "libraryId": "Xamarin.Forms",
-      "targetGraphs": [
-        "MonoAndroid,Version=v12.0"
-      ]
-    }
-  ]
+  "logs": []
 }

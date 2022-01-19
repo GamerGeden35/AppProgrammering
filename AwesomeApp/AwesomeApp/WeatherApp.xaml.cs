@@ -17,7 +17,8 @@ namespace AwesomeApp
         public WeatherApp()
         {
             InitializeComponent();
-            GetWeatherInfo();
+            //GetWeatherInfo();
+            GetCoordinates();
             BindingContext = this;
         }
 
@@ -37,7 +38,47 @@ namespace AwesomeApp
             set { _gamervejr = value; OnPropertyChanged("gamervejr"); }
         }
 
-        private string Location = "Odense";
+        private string Location { get; set; } = "Odense";
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+
+        private async void GetCoordinates()
+        {
+            try
+            {
+                var request = new GeolocationRequest(GeolocationAccuracy.Lowest);
+                var location = await Geolocation.GetLocationAsync(request);
+
+                if (location !=null)
+                {
+                    Latitude = location.Latitude;
+                    Longitude = location.Longitude;
+                    Location = await GetCity(location);
+
+                    GetWeatherInfo();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.StackTrace);
+            }
+        }
+
+        private async Task<string> GetCity(Location location)
+        {
+            var places = await Geocoding.GetPlacemarksAsync(location);
+            var currentPlace = places?.FirstOrDefault();
+
+            if (currentPlace != null)
+            {
+                return $"{currentPlace.Locality}, {currentPlace.CountryName}";
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         private async void GetWeatherInfo()
         {
@@ -69,31 +110,6 @@ namespace AwesomeApp
 
                     //DayOfWeek wk = DateTime.Today.DayOfWeek;
 
-                    //int day = 4;
-                    //switch (day)
-                    //{
-                    //    case 1:
-                    //        day = "Monday";
-                    //        break;
-                    //    case 2:
-                    //        day = "Tuesday";
-                    //        break;
-                    //    case 3:
-                    //        day = "Wednesday";
-                    //        break;
-                    //    case 4:
-                    //        day = "Thursday";
-                    //        break;
-                    //    case 5:
-                    //        day = "Friday";
-                    //        break;
-                    //    case 6:
-                    //        day = "Saturday";
-                    //        break;
-                    //    case 7:
-                    //        day = "Sunday";
-                    //        break;
-                    //}
 
                     var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
                     //var dt = new DateTime(weatherInfo.dt * 1000);
@@ -105,8 +121,8 @@ namespace AwesomeApp
                                 temperatureTxt.TextColor = Color.White;
                                 gamervejr = "It is gamer weather";
                             }
-                            else if (weatherInfo.main.temp <= 0)
-                            {
+                            else if (weatherInfo.main.temp <= 1)
+                            { 
                                 temperatureTxt.TextColor = Color.Turquoise;
                                 gamervejr = "It is gamer weather with a scarf on";
                             }
