@@ -38,6 +38,7 @@ namespace AwesomeApp
             set { _gamervejr = value; OnPropertyChanged("gamervejr"); }
         }
 
+
         private string Location { get; set; } = "Odense";
         public double Latitude { get; set; }
         public double Longitude { get; set; }
@@ -113,7 +114,8 @@ namespace AwesomeApp
 
                     var dt = new DateTime().ToUniversalTime().AddSeconds(weatherInfo.dt);
                     //var dt = new DateTime(weatherInfo.dt * 1000);
-                    dateTxt.Text = dt.ToString(test.ToString("ddd") + ", MMMM, dd").ToUpper();
+                    //dateTxt.Text = dt.ToString(test.ToString("ddd") + ", MMMM, dd").ToUpper();
+                    dateTxt.Text = test.ToString("dddd, MMM, dd").ToUpper();
                     //dateTxt.Text = dt.ToString("dddd, MMMM, dd").ToUpper();
 
                     if (weatherInfo.main.temp >= 1 && weatherInfo.main.temp <= 10)
@@ -129,7 +131,7 @@ namespace AwesomeApp
                             else if (weatherInfo.main.temp >= 11 && weatherInfo.main.temp <= 20)
                             {
                                 temperatureTxt.TextColor = Color.Orange;
-                                gamervejr = "It is gamer weather with";
+                                gamervejr = "It is gamer weather with shorts";
                             }
                             else
                             {

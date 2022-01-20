@@ -2,33 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AwesomeApp.WeatherApp" BackgroundColor="#3d3c3a">
-        <ContentPage.Content>
-        <!--<Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="0" BackgroundColor="DarkGreen">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <Grid Grid.Row="1" HeightRequest="160" ColumnSpacing="0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Grid BackgroundColor="DarkGray" Opacity="0.35" Grid.Column="0">
-                
-                </Grid>
-                <Grid BackgroundColor="Gray" Opacity="0.3" Grid.Column="1">
-
-                </Grid>
-                <Grid BackgroundColor="DarkSlateGray" Opacity="0.3" Grid.Column="2">
-
-                </Grid>
-                <Grid BackgroundColor="Black" Opacity="0.3" Grid.Column="3">
-
-                </Grid>
-            </Grid>
-        </Grid>-->
+    <ContentPage.Content>
 
         <Grid>
             <Grid.RowDefinitions>

@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="#3d3c3a">
         <Image Source="stiim.png" />
-            <Label BindingContext="" FontAttributes="Bold" TextColor="White"
+            <Label BindingContext="" FontAttributes="Bold" Text="Welcome to STIIM" TextColor="White"
                 HorizontalOptions="CenterAndExpand" FontSize="35" x:Name="welcome" />
         </StackLayout>
     </ContentPage.Content>
